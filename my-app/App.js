@@ -47,9 +47,9 @@ export default function App() {
               />
               {blueMargaritaData.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -62,9 +62,9 @@ export default function App() {
               />
               {moscowMuleData.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -77,9 +77,9 @@ export default function App() {
               />
               {londonTownData.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -99,9 +99,9 @@ export default function App() {
               />
               {barracudaData.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -109,9 +109,9 @@ export default function App() {
               <Button onPress={() => fetchData('B-53', setB53Data)} style={styles.button} title='B-53' />
               {b53Data.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -123,9 +123,9 @@ export default function App() {
               />
               {avalancheData.map((drink) => (
                 <View key={drink.idDrink}>
-                  <Text>Nombre: {drink.strDrink}</Text>
-                  <Text>Ingrediente1: {drink.strIngredient1}</Text>
-                  <Text>Ingrediente2: {drink.strIngredient2}</Text>
+                  <Text style={styles.TextI}>Nombre: {drink.strDrink}</Text>
+                  <Text style={styles.TextI}>Ingrediente1: {drink.strIngredient1}</Text>
+                  <Text style={styles.TextI}>Ingrediente2: {drink.strIngredient2}</Text>
                 </View>
               ))}
             </View>
@@ -196,5 +196,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
     flexDirection: 'row',
+  },
+  TextI: {
+    fontSize: 15,
+    fontWeight: 'bold',
   },
 });
